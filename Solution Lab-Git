@@ -1,0 +1,61 @@
+Solution Lab-Git
+
+PART I
+Instructions
+Create a new repository in the GitHub. Name it Iron+ your name. Example: if your name is Alvaro, you will name the repo IronAlvaro.
+on github: create repository
+
+Clone that repo to your computer.
+check if other git files exist in target directory: git remote -b  and git status
+git clone URL
+
+Create a file in that folder. Name it about.txt and add a fun fact about yourself. (You can use the command line: touch nameOfTheFile.txt).
+touch about.txt
+echo "I don't like mangoes" > about.txt
+cat about.txt #to check if file was edited correctly.
+
+Add the file you just created to the git.
+git add . OR git add about.txt
+
+Commit the changes.
+git commit -m "Lab Solved"
+
+Push the changes to the GitHub and check your repository to make sure everything is there.
+git branch #check branch and change name if necessary. Also check branch on hithub.
+git push -u origin main
+
+
+
+PART II
+
+
+Fork your classmate's repository.
+on hitgub web: go to URL for repo and select FORK
+
+Clone the repository, so that you have it locally and can make changes.
+got to desired local directory: cd path
+create directory if needed: mkdir new_directory_for_clone
+git clone URL
+
+
+Create a new branch named classmate.
+git switch -c classmate
+
+Create a new file with your name (ex. maya.txt) and finish the following sentence I enrolled Ironhack's Data Analytics bootcamp because.... When you are done, save the changes.
+touch alex.txt
+echo " enrolled Ironhack's Data Analytics bootcamp because.... " > alex.txt
+cat alex.txt
+
+
+Add the changes to the git.
+git add . or git add alex.txt
+
+Commit and push the changes. Now, all the changes should be on your GitHub, inside the forked repository.
+git commit -m "created new branch classmate"
+
+Create a pull request to make changes appear in the original repository.
+on hithub.com create a pull request
+Merge the branch your classmate created. Now everyone's repos should have the original file (about.txt) as well as the new one with your classmate's name.
+
+
+
